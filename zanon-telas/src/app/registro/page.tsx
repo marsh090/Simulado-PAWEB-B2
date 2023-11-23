@@ -1,17 +1,19 @@
 import Layout from '../layout';
 import styles from './registro.module.css';
+import FormCard from '../components/formCard';
 
-export default function Login() {
+export default function Registro() {
   return (
     <Layout>
       <main className={styles.main}>
-      <form className={styles.coluna}>
-        <h2>Registro</h2><br />
-        <input className={styles.myInput} type="text" id="nome" placeholder='Nome' />
-        <input className={styles.myInput} type="email" id="email" placeholder='Email' />
-        <input className={styles.myInput} type="password" id="senha" placeholder='Senha' />
-        <a className={styles.myButton} href="/login">Criar</a>
-      </form>
+      <FormCard
+            name="Registrar"
+            numInputs={3}
+            inputNames={['Nome', 'Email', 'Senha']}
+            inputTypes={['text', 'email', 'password']}
+            route='/login'
+            btName='Registrar'
+            />
       </main>
     </Layout>
   );

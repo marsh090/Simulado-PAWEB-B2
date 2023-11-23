@@ -1,18 +1,20 @@
 import Layout from '../layout';
 import styles from './login.module.css';
+import FormCard from '../components/formCard';
 
 export default function Login() {
   return (
     <Layout>
       <main className={styles.main}>
-      <form className={styles.coluna}>
-        <h2>Login</h2><br />
-        <input className={styles.myInput} type="email" id="email" placeholder='Email' />
-        <input className={styles.myInput} type="password" id="senha" placeholder='Senha' />
-        <a href="/recover" className={styles.subtitulo}>Esqueci minha senha</a>
-        <a className={styles.myButton} href="/dashboard">Entrar</a>
-        <a className={styles.subtitulo} href="/registro">Não tem uma conta? Registre-se</a>
-      </form>
+      <FormCard
+            name="Login"
+            numInputs={2}
+            inputNames={['Email', 'Senha']}
+            inputTypes={['email', 'password']}
+            route='/dashboard'
+            btName='Entrar'
+            />
+            <a href="/recover"><p className={styles.subtitulo}>Recuperar senha</p></a>
       </main>
     </Layout>
   );

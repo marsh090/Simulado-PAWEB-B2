@@ -57,6 +57,7 @@
 .myButton:hover {
     background-color:#8b70ca56;
     transition: linear 0.2s;
+    cursor: pointer;
 }
 
 .subtitulo{
@@ -66,4 +67,5 @@
 
 .subtitulo:hover{
     text-decoration: underline;
+    cursor: pointer;
 }

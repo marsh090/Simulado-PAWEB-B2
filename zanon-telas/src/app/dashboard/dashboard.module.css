@@ -1,8 +1,68 @@
-.main {
+.dashboard {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 6rem;
     min-height: 100vh;
+    padding: 2rem;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 1em;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.widget {
+    background-color: #fff;
+    padding: 1rem;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    min-height: 50vh;
+}
+
+.widget-title {
+    margin-bottom: 2rem;
+}
+
+.widget-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.widget-content .chart {
+    flex-grow: 1;
+}
+
+.widget:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.detail {
+    background-color: #fff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
