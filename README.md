@@ -13,5 +13,3 @@ Este projeto foi criado por **Lucas Zanon Guarnier**, aluno da turma **CC5M**, c
 **Tecnologias utilizadas**
 
 * **NextJS**
-* **ui.shadcn**
-* **Prisma**
