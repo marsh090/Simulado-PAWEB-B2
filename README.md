@@ -1,8 +1,4 @@
-# Projeto de simulado para prova B2 de NextJS
-
-**Descrição**
-
-Este projeto foi criado por **Lucas Zanon Guarnier**, aluno da turma **CC5M**, como simulado para a prova B2 de NextJS. O projeto consiste em um sistema de gerenciamento de usuários, com as seguintes páginas funcionais:
+# **Lucas Zanon Guarnier - CC5M**
 
 * **Página Inicial (/)**
 * **Login (/login)**
@@ -13,3 +9,4 @@ Este projeto foi criado por **Lucas Zanon Guarnier**, aluno da turma **CC5M**, c
 **Tecnologias utilizadas**
 
 * **NextJS**
+* **ui.shadcn
